@@ -1,0 +1,14 @@
+@charset "EUC-KR";
+h2{
+	color: orange;
+	font-family:"바탕체";
+	font-size:20pt;
+	border-style:dotted; /* 선 종류 */
+	border-color: blue;
+	border-width: 2px; /* 선 두께 */
+	
+}
+
+h3{
+	color: red;
+}

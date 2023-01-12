@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+<script type="text/javascript" src="js/jquery.js"></script>
+	<head>
+		<meta charset="UTF-8">
+		<title>자기소개 Page</title>
+		<style>
+	@import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');		
+	body {
+	font-family: 'Dongle', sans-serif;
+	width:1
+		}
+			ul li{
+				display: inline;/* 한 줄로 나오게 한다. */
+				letter-spacing: 7px;
+				padding: 10px; /*여백*/
+			}
+			ul li a{
+			text-decoration: none;
+			color: black;
+			}
+			.menu{
+				text-align: center;
+				border-top: 1px solid pink;
+				border-bottom: 1px solid pink;
+				padding: 10px 0px;
+				background-color: pink;
+			}
+			 .modal_wrap {
+            width: 500px;
+            height: 500px;
+            position: absolute;
+            border: 2px solid #c69ac0;
+            top:50%;
+            left: 50%;
+            margin: -250px 0 0 -250px;
+            background:#e5ffff;
+            z-index: 2;
+            display : none;
+        }
+        .modal_wrap.show-modal {
+
+            display: block;
+        }
+        .modal_background.show-modal {
+
+            display: block;
+        }
+        .modal_background {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color:rgba(254, 215,215, 0.5);
+            top:0;
+            left: 0;
+            z-index: 1;
+            display : none;
+        }
+        .modal_close {
+            width: 26px;
+            height: 26px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        .modal_wrap .text {
+            margin-top: 45px;
+            margin-left: 5px;
+        }
+
+        .modal_close .closeImg {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+		}
+		
+		 .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+		</style>
+	
+	
+	</head>
+	
+	<body>
+
+		<ul class="menu">
+			<li id="modal_btn" style="font-size:40px;">자기소개
+				<div class="modal_background"></div>
+		        <div class="modal_wrap">
+		        <div class="modal_close"></div>
+		        <div class="text" style="font-size:24px;">
+		        이름: 유다은(99.09.18) <br> 전공: 정보통신공학 <br> 주로 쓰던 언어: Python, MySQL <br> 특이사항: 2월 졸업예정<br>대구에서 왔어요!<br>
+		        <br> 고양이 한 마리를 키우고 있어요!<br>
+		        하지만 지금은 본가에 맡겨두고 서울에 와서 자취중이라 못 보고 있는 상태... <img src="../img/img/cat.gif" style="width:5%; height:5%;">
+		    <br>고양이 이름은 '하루' 이고 귀여운 브리티시 쇼트헤어 입니다! <br> 
+		    <a href="https://www.16personalities.com/ko/%EC%84%B1%EA%B2%A9%EC%9C%A0%ED%98%95-intj" style="color:#3687b0 ">MBTI: INTJ</a>
+		    <br><a href="https://github.com/yudaeun" style="color:#e59999 ">깃허브</a>
+		    
+		        </div>
+		        </div>
+			</li>
+			
+		</ul>
+	
+	<img src="../img/img/cat/1.jpg" style="width:30%; height:30%; border-radius: 40px 80px / 80px 40px; margin-right:20px;">
+	<img src="../img/img/cat/2.jpg" style="width:30%; height:30%;  border-radius: 20px 40px 60px 80px / 80px 60px 40px 20px;margin-right:30px;">
+	<img src="../img/img/cat/3.jpg" style="width:30%; height:30%;  border-radius: 40px 80px / 80px 40px;margin-right:30px;">
+	<br><br><br>
+	<img src="../img/img/cat/4.jpg" style="width:30%; height:30%;  border-radius: 20px 40px 60px 80px / 80px 60px 40px 20px;margin-right:30px;">
+	<img src="../img/img/cat/5.jpg" style="width:30%; height:30%;  border-radius: 40px 80px / 80px 40px;margin-right:30px;">
+	<img src="../img/img/cat/6.jpg" style="width:30%; height:30%; border-radius: 20px 40px 60px 80px / 80px 60px 40px 20px;margin-right:30px;">
+	
+        
+        <script>
+        
+        const modal_wrap = document.querySelector('.modal_wrap')
+        const modal_background = document.querySelector('.modal_background')
+        
+    
+        //Show modal
+        document.querySelector('#modal_btn').addEventListener('click', () => {
+        open()
+        })
+    
+        //Hide modal
+        document.querySelector('.modal_close').addEventListener('click', () => {
+        close()
+        })
+    
+        //Hide modal
+        window.addEventListener('click', (e) => {
+        e.target === modal_background ?  close() : false
+        })
+        function close(){
+        modal_wrap.classList.remove('show-modal');
+        modal_background.classList.remove('show-modal');
+        }
+        function open(){
+        modal_wrap.classList.add('show-modal')
+        modal_background.classList.add('show-modal')
+        }
+        
+        
+        
+        </script>
+        <script type="text/javascript">
+// <![CDATA[
+var colours=new Array('#f00', '#f06', '#f0f', '#f6f', '#f39', '#f9c'); // colours of the hearts
+var minisize=16; // smallest size of hearts in pixels
+var maxisize=28; // biggest size of hearts in pixels
+var hearts=66; // maximum number of hearts on screen
+var over_or_under="over"; // set to "over" for hearts to always be on top, or "under" to allow them to float behind other objects
+
+/*****************************
+*JavaScript Love Heart Cursor*
+*  (c)2013+ mf2fm web-design *
+*   http://www.mf2fm.com/rv  *
+*  DON'T EDIT BELOW THIS BOX *
+*****************************/
+var x=ox=400;
+var y=oy=300;
+var swide=800;
+var shigh=600;
+var sleft=sdown=0;
+var herz=new Array();
+var herzx=new Array();
+var herzy=new Array();
+var herzs=new Array();
+var kiss=false;
+
+if (typeof('addRVLoadEvent')!='function') function addRVLoadEvent(funky) {
+  var oldonload=window.onload;
+  if (typeof(oldonload)!='function') window.onload=funky;
+  else window.onload=function() {
+    if (oldonload) oldonload();
+    funky();
+  }
+}
+
+addRVLoadEvent(mwah);
+
+function mwah() { if (document.getElementById) {
+  var i, heart;
+  for (i=0; i<hearts; i++) {
+    heart=createDiv("auto", "auto");
+    heart.style.visibility="hidden";
+	heart.style.zIndex=(over_or_under=="over")?"1001":"0";
+    heart.style.color=colours[i%colours.length];
+	heart.style.pointerEvents="none";
+    if (navigator.appName=="Microsoft Internet Explorer") heart.style.filter="alpha(opacity=75)";
+    else heart.style.opacity=0.75;
+    heart.appendChild(document.createTextNode(String.fromCharCode(9829)));
+    document.body.appendChild(heart);
+    herz[i]=heart;
+	herzy[i]=false;
+  }
+  set_scroll();
+  set_width();
+  herzle();
+}}
+
+function herzle() {
+  var c;
+  if (Math.abs(x-ox)>1 || Math.abs(y-oy)>1) {
+    ox=x;
+    oy=y;
+    for (c=0; c<hearts; c++) if (herzy[c]===false) {
+	  herz[c].firstChild.nodeValue=String.fromCharCode(9829);
+      herz[c].style.left=(herzx[c]=x-minisize/2)+"px";
+      herz[c].style.top=(herzy[c]=y-minisize)+"px";
+      herz[c].style.fontSize=minisize+"px";
+	  herz[c].style.fontWeight='normal';
+      herz[c].style.visibility='visible';
+      herzs[c]=minisize;
+      break;
+    }
+  }
+  for (c=0; c<hearts; c++) if (herzy[c]!==false) blow_me_a_kiss(c);
+  setTimeout("herzle()", 40);
+}
+
+document.onmousedown=pucker;
+document.onmouseup=function(){clearTimeout(kiss);};
+
+function pucker() {
+  ox=-1;
+  oy=-1;
+  kiss=setTimeout('pucker()', 100);
+}
+
+function blow_me_a_kiss(i) {
+  herzy[i]-=herzs[i]/minisize+i%2;
+  herzx[i]+=(i%5-2)/5;
+  if (herzy[i]<sdown-herzs[i] || herzx[i]<sleft-herzs[i] || herzx[i]>sleft+swide-herzs[i]) {
+    herz[i].style.visibility="hidden";
+    herzy[i]=false;
+  }
+  else if (herzs[i]>minisize+2 && Math.random()<.5/hearts) break_my_heart(i);
+  else {
+    if (Math.random()<maxisize/herzy[i] && herzs[i]<maxisize) herz[i].style.fontSize=(++herzs[i])+"px";
+    herz[i].style.top=herzy[i]+"px";
+    herz[i].style.left=herzx[i]+"px";
+  }
+}
+
+function break_my_heart(i) {
+  var t;
+  herz[i].firstChild.nodeValue=String.fromCharCode(9676);
+  herz[i].style.fontWeight='bold';
+  herzy[i]=false;
+  for (t=herzs[i]; t<=maxisize; t++) setTimeout('herz['+i+'].style.fontSize="'+t+'px"', 60*(t-herzs[i]));
+  setTimeout('herz['+i+'].style.visibility="hidden";', 60*(t-herzs[i]));
+}
+
+document.onmousemove=mouse;
+function mouse(e) {
+  if (e) {
+    y=e.pageY;
+    x=e.pageX;
+  }
+  else {
+    set_scroll();
+    y=event.y+sdown;
+    x=event.x+sleft;
+  }
+}
+
+window.onresize=set_width;
+function set_width() {
+  var sw_min=999999;
+  var sh_min=999999;
+  if (document.documentElement && document.documentElement.clientWidth) {
+    if (document.documentElement.clientWidth>0) sw_min=document.documentElement.clientWidth;
+    if (document.documentElement.clientHeight>0) sh_min=document.documentElement.clientHeight;
+  }
+  if (typeof(self.innerWidth)=='number' && self.innerWidth) {
+    if (self.innerWidth>0 && self.innerWidth<sw_min) sw_min=self.innerWidth;
+    if (self.innerHeight>0 && self.innerHeight<sh_min) sh_min=self.innerHeight;
+  }
+  if (document.body.clientWidth) {
+    if (document.body.clientWidth>0 && document.body.clientWidth<sw_min) sw_min=document.body.clientWidth;
+    if (document.body.clientHeight>0 && document.body.clientHeight<sh_min) sh_min=document.body.clientHeight;
+  }
+  if (sw_min==999999 || sh_min==999999) {
+    sw_min=800;
+    sh_min=600;
+  }
+  swide=sw_min;
+  shigh=sh_min;
+}
+
+window.onscroll=set_scroll;
+function set_scroll() {
+  if (typeof(self.pageYOffset)=='number') {
+    sdown=self.pageYOffset;
+    sleft=self.pageXOffset;
+  }
+  else if (document.body && (document.body.scrollTop || document.body.scrollLeft)) {
+    sdown=document.body.scrollTop;
+    sleft=document.body.scrollLeft;
+  }
+  else if (document.documentElement && (document.documentElement.scrollTop || document.documentElement.scrollLeft)) {
+    sleft=document.documentElement.scrollLeft;
+    sdown=document.documentElement.scrollTop;
+  }
+  else {
+    sdown=0;
+    sleft=0;
+  }
+}
+
+function createDiv(height, width) {
+  var div=document.createElement("div");
+  div.style.position="absolute";
+  div.style.height=height;
+  div.style.width=width;
+  div.style.overflow="hidden";
+  div.style.backgroundColor="transparent";
+  return (div);
+}
+// ]]>
+</script>
+        
+	</body>
+	
+</html>
